@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveillence Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+<body background="https://media.istockphoto.com/photos/surveillance-street-camera-in-city-and-icons-picture-id1174652880?b=1&k=6&m=1174652880&s=170667a&w=0&h=QdEO-vDnvaFLkwY09EaQXfL4XnBrWEB179Ee4FqF7NI=">
+    <center>
+        <h3 class="btn btn-warning heading">
+            AI Video Surveillence Detector
+            <img src="https://img.icons8.com/cute-clipart/2x/bullet-camera.png" alt="" id="logo">
+        </h3>
+        <div class="button_holder">
+            <button class="btn btn-warning buttons" id="start" onclick="start()">Start</button>
+            <button class="btn btn-danger buttons" id="num">Number of Objects detected - <span id="objs_count"></span></button>
+            <button class="btn btn-success buttons" id="status_btn">Status - <span id="status"></span></button>
+        </div>
+        <div id="canvas_holder"></div>
+        <div class="footer">
+            &copy; Copyright SSG 2020. <br><span class="dev">Developed by S. S. Gupta</span> 
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
