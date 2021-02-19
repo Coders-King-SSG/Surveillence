@@ -19,10 +19,26 @@
         </h3>
         <div class="button_holder">
             <button class="btn btn-warning buttons" id="start" onclick="start()">Start</button>
+            <button class="btn btn-info buttons" id="stop" onclick="video.stop()">Restart</button>
+            <button class="btn btn-primary buttons" id="pause" onclick="video.pause()">Pause</button>
             <button class="btn btn-danger buttons" id="num">Number of Objects detected - <span id="objs_count"></span></button>
             <button class="btn btn-success buttons" id="status_btn">Status - <span id="status"></span></button>
+            <select id="filter_group" class="buttons">
+                <option value="Normal">Normal</option>
+                <option value="GRAY">Black & White</option>
+                <option value="OPAQUE">Opaque</option>
+                <option value="INVERT">Invert</option>
+                <option value="POSTERIZE">Posterize</option>
+                <option value="BLUR">Blur</option>
+                <option value="ERODE">Erode</option>
+                <option value="DILATE">Dilate</option>
+                <option value="THRESHOLD">Threshold</option>
+            </select>
         </div>
-        <div id="canvas_holder"></div>
+        <div class="canvas_holder" style="color: aliceblue;">
+            Volume : <input type="range" id="volume_inp" min="0" max="100" value="70">
+            <div id="canvas_holder"></div>
+        </div>
         <div class="footer">
             &copy; Copyright SSG 2020. <br><span class="dev">Developed by S. S. Gupta</span> 
         </div>
